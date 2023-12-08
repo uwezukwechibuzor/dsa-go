@@ -42,6 +42,12 @@ func main() {
 	var intHeap *IntegerHeap = &IntegerHeap{1, 4, 5}
 	heap.Init(intHeap)
 	heap.Push(intHeap, 2)
+
+	// rm the first element
+	heap.Pop(intHeap)
+
+	// rm the second element
+	heap.Pop(intHeap)
 	fmt.Printf("minimum: %d\n", (*intHeap)[0])
 	for intHeap.Len() > 0 {
 		fmt.Printf("%d \n", heap.Pop(intHeap))
