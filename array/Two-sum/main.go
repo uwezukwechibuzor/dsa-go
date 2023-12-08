@@ -19,6 +19,7 @@ func twoSum(nums []int, target int) []int {
 
 		// Check if the complement exists in the map
 		if index, found := numMap[complement]; found {
+			fmt.Println(index)
 			// If found, print the indices of the two numbers
 			return []int{index, i}
 		}
@@ -33,7 +34,7 @@ func twoSum(nums []int, target int) []int {
 
 func main() {
 	// Example usage:
-	nums1 := []int{2, 7, 11, 15}
+	nums1 := []int{2, 5, 7, 11, 15}
 	target1 := 9
 	twoSumA := twoSum(nums1, target1)
 	fmt.Println(twoSumA)
